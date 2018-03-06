@@ -1,0 +1,38 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Drop Box Link Up</a>
+
+      <button
+        class="btn btn-primary btn-margin"
+        ui-sref="home">
+          Home
+      </button>
+
+      <button
+        id="qsLoginBtn"
+        class="btn btn-primary btn-margin"
+        ng-if="!vm.auth.isAuthenticated()"
+        ng-click="vm.auth.login()">
+          Log In
+      </button>
+
+      <button
+        id="fileAccess"
+        class="btn btn-primary btn-margin"
+        ng-if="vm.auth.isAuthenticated()"
+        ng-click="vm.auth.send()">
+        View/Download Files
+      </button>
+
+      <button
+        id="qsLogoutBtn"
+        class="btn btn-primary btn-margin"
+        ng-if="vm.auth.isAuthenticated()"
+        ng-click="vm.auth.logout()">
+        Log Out
+      </button>
+
+    </div>
+  </div>
+</nav>
