@@ -8,6 +8,7 @@ const https = require('https');
 const uuid = require('uuid/v4');
 const hostname = 'https://sheltered-waters-25331.herokuapp.com/';
 const port = 5000;
+const PORT = process.env.PORT || 5000
 
 app.use('/', express.static(__dirname +  '/'));
 
@@ -15,11 +16,19 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+express()
+    .use(express.static(path.join(__dirname, 'public')))
+    .set('views', path.join(__dirname, 'views'))
+    .set('view engine', 'ejs')
+    .get('/', (req, res) => res.render('pages/index'))
+    .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+
+/*
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-/*
 app.get('/grant', function (req, res) {
     csrfToken = uuid()
 
