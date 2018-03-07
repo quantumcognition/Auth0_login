@@ -6,7 +6,7 @@ const dropbox = require('dropbox');
 const queryString = require('querystring');
 const https = require('https');
 const uuid = require('uuid/v4');
-const hostname = '192.168.1.68';
+const hostname = 'https://sheltered-waters-25331.herokuapp.com/';
 const port = 3000;
 
 app.use('/', express.static(__dirname +  '/'));
@@ -15,10 +15,14 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+
+
+
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+/*
 app.get('/grant', function (req, res) {
     csrfToken = uuid()
 
@@ -77,6 +81,9 @@ app.get('/callback', function (req, res, next) {
         })
 
     }).end(bodyParams)
+
+
 });
+*/
 
 
