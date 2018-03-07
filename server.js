@@ -7,16 +7,13 @@ const queryString = require('querystring');
 const https = require('https');
 const uuid = require('uuid/v4');
 const hostname = 'https://sheltered-waters-25331.herokuapp.com/';
-const port = 3000;
+const port = 5000;
 
 app.use('/', express.static(__dirname +  '/'));
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
-
-
-
 
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
