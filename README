@@ -1,9 +1,9 @@
 #README
 
-1 - I have auth0 setup for login authorization with my application which with google and dropbox which will be redirected
+1 - I have setup auth0 for login authorization using social media such as google and dropbox with my application
 
-2 - I have also set up my dropbox handler which helps with authorization in the server.js file for accessing the dropbox 
-    account for viewing and downloading, I have an error while deployment works well on localhost
+2 - I have also set up my dropbox handler in the server.js file for accessing the dropbox account for viewing and
+    downloading. I have an error while deployment, works well on localhost
     
 3 - I'm using heroku for deploying my application - https://sheltered-waters-25331.herokuapp.com/
 
