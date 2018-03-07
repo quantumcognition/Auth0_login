@@ -40,7 +40,7 @@
       domain: 'anantha-auth.auth0.com',
       responseType: 'token id_token',
       audience: 'https://' + 'anantha-auth.auth0.com'  + '/userinfo',
-      redirectUri: 'http://192.168.1.68:3000/login/callback',
+      redirectUri: 'https://sheltered-waters-25331.herokuapp.com:3000/login/callback',
       scope: 'openid'
     });
 
