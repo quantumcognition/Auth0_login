@@ -11,15 +11,20 @@ const port = 3000;
 
 app.use('/', express.static(__dirname +  '/'));
 
+app.listen(process.env.PORT || 8080);
+
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+
+
+
+/*
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-/*
 
 app.get('/grant', function (req, res) {
     csrfToken = uuid()

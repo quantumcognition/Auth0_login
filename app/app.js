@@ -40,7 +40,7 @@
       domain: 'anantha-auth.auth0.com',
       responseType: 'token id_token',
       audience: 'https://' + 'anantha-auth.auth0.com'  + '/userinfo',
-      redirectUri: 'http://127.0.0.1:3000/login/callback',
+      redirectUri: 'http://192.168.1.68:3000/login/callback',
       scope: 'openid'
     });
 
