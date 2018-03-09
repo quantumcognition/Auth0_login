@@ -1,6 +1,6 @@
 #README
 
-1 - I have setup auth0 for login authorization using social media such as google and dropbox with my application
+1 - I have setup auth0 for login authorization using social media such as google and dropbox with a boiler template Angular JS
 
 2 - I'm using heroku for deployment - https://sheltered-waters-25331.herokuapp.com/
 
