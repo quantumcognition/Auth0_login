@@ -36,11 +36,11 @@
 
     // Initialization for the angular-auth0 library
     angularAuth0Provider.init({
-      clientID: 'a9WgkefXIA9wlB2WCryGIbbAFO7A8iAa',
-      domain: 'anantha-auth.auth0.com',
+      clientID: '',
+      domain: '',
       responseType: 'token id_token',
-      audience: 'https://' + 'anantha-auth.auth0.com'  + '/userinfo',
-      redirectUri: 'https://sheltered-waters-25331.herokuapp.com:/8080/login/callback',
+      audience: 'https://' + 'domain'  + '/userinfo',
+      redirectUri: 'https://sheltered-waters-25331.herokuapp.com:8080/login/callback',
       scope: 'openid'
     });
 
