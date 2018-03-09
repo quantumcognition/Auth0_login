@@ -39,7 +39,7 @@
       clientID: '',
       domain: '',
       responseType: 'token id_token',
-      audience: 'https://' + 'domain'  + '/userinfo',
+      audience: 'https://' + domain  + '/userinfo',
       redirectUri: 'https://sheltered-waters-25331.herokuapp.com:8080/login/callback',
       scope: 'openid'
     });
