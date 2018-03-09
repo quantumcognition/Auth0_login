@@ -29,7 +29,7 @@ app.get('/grant', function (req, res) {
         pathname: 'oauth2/authorize',
         method: 'GET',
         query: {
-            client_id: 'xcsyxzki8zccbsq',
+            client_id: '',
             response_type: 'code',
             redirect_uri: 'http://192.168.1.68:3000/callback',
             state: csrfToken
@@ -60,8 +60,8 @@ app.get('/callback', function (req, res, next) {
         code: req.query.code,
         grant_type: 'authorization_code',
         redirect_uri: 'http://192.168.1.68:3000/callback',
-        client_id: 'xcsyxzki8zccbsq',
-        client_secret: 'idf872gpdckqdg4'
+        client_id: '',
+        client_secret: ''
     });
 
     https.request(options, function(resp) {
